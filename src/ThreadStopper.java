@@ -17,7 +17,7 @@ public class ThreadStopper implements Runnable {
 
     }
 
-    public boolean isCanStop() {
+    public synchronized boolean isCanStop() {
         return canStop;
     }
 }
